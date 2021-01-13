@@ -3,9 +3,8 @@ package logicoperators;
 public class LogicOperators {
 
     public static void main(String[] args) {
-        
-     
-     int x = 12;
+
+        int x = 12;
         if (x != 12) {
             System.out.println("x is equals to 12");
         } else {
@@ -22,6 +21,7 @@ public class LogicOperators {
         boolean comparison = false;
         boolean comparison2 = false;
         boolean comparison3 = false;
+        
         comparison = x != 12;
         System.out.println("comparison -> " + comparison);
 
@@ -58,6 +58,7 @@ public class LogicOperators {
 
         p = true;
         q = true;
+        
         System.out.println(" ( " + p + " ^ " + q + " ) " + (p && q));
         System.out.println(" ( " + p + " ^ " + !q + " ) " + (p && !q));
         System.out.println(" ( " + !p + " ^ " + q + " ) " + (!p && q));
