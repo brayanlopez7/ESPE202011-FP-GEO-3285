@@ -39,7 +39,6 @@ public class NumberOfTheList {
             sum = m + kelvin;
             System.out.println(m + " °C + " + kelvin + " = " + sum + " K ");
         }
-
     }
 
 }
