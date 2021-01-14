@@ -7,7 +7,7 @@ public class WS05Iterations {
         int i;
         i = 0;
         
-        System.out.println("==== This is a while loo from 1 to 10 ====");
+        System.out.println("==== This is a while loop from 1 to 10 ====");
         
         while( i < 10) {
             System.out.println("i ->" + i);
