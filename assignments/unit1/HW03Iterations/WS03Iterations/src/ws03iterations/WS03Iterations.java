@@ -1,9 +1,9 @@
-package numberofthelist;
+package ws03iterations;
 
-public class NumberOfTheList {
+public class WS03Iterations {
 
     public static void main(String[] args) {
-        int i;
+         int i;
         i = 1;
 
         System.out.println("=======================================");
@@ -40,5 +40,5 @@ public class NumberOfTheList {
             System.out.println(m + " °C + " + kelvin + " = " + sum + " K ");
         }
     }
-
+    
 }
