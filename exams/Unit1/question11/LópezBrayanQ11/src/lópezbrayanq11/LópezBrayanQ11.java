@@ -175,7 +175,7 @@ public class LópezBrayanQ11 {
                     break;
             }
 
-        } while (option != 14);
+        } while (option != 13);
 
     }
 
