@@ -11,9 +11,9 @@ public class HW04Menus {
         int option;
 
         do {
-            System.out.println(" ==============================");
-            System.out.println(" Margin of gain of a product ");
-            System.out.println(" ==============================");
+            System.out.println(" ===================");
+            System.out.println("   Margin of gain  ");
+            System.out.println(" ===================");
             System.out.println("1. -> Gross margin");
             System.out.println("2. -> Net margin");
             System.out.println("3. -> Exit");
@@ -32,7 +32,8 @@ public class HW04Menus {
                     System.out.println("enter the cost -> ");
                     sales = input.nextFloat();
                     percentage1 = (((sales - cost) / sales) * 100);
-                    System.out.println(" the percentage is: " + String.format("%.2f", percentage1) + "%");
+                    System.out.println(" the percentage is: "
+                            + String.format("%.2f", percentage1) + "%");
                     break;
 
                 case 2:
@@ -44,8 +45,9 @@ public class HW04Menus {
                     System.out.println("enter the net cost -> ");
                     netsales = input.nextFloat();
                     percentage2 = ((netprofit / netsales) * 100);
-                  
-                    System.out.println(" the percentage is: " + String.format("%.2f", percentage2) + "%");
+
+                    System.out.println(" the percentage is: "
+                            + String.format("%.2f", percentage2) + "%");
                     break;
 
                 case 3:
@@ -56,7 +58,6 @@ public class HW04Menus {
                 default:
                     System.out.println("Invalid option\n\n\n");
                     break;
-
             }
 
         } while (option != 3);
