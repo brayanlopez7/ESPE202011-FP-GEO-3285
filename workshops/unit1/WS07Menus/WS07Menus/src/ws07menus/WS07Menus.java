@@ -18,7 +18,7 @@ public class WS07Menus {
      */
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+      Scanner input = new Scanner(System.in);
         boolean mainLoop = true;
         int option;
 

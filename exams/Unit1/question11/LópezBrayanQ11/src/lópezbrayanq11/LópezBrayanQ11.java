@@ -40,142 +40,142 @@ public class LópezBrayanQ11 {
                     System.out.println("enter multiplying -> ");
                     multiplying1 = input.nextInt();
                     product1 = multiplying1 * multiplier1;
-                    System.out.println("The multiplcation is: " + multiplying1 
+                    System.out.println("The multiplcation is: " + multiplying1
                             + " * " + multiplier1 + " = " + product1);
                     break;
-                    
-                    case 2:
+
+                case 2:
                     int multiplying2;
                     final int multiplier2 = 2;
                     int product2;
                     System.out.println("enter multiplying -> ");
-                    multiplying2= input.nextInt();
+                    multiplying2 = input.nextInt();
                     product2 = multiplying2 * multiplier2;
-                    System.out.println("The multiplcation is: " + multiplying2 
+                    System.out.println("The multiplcation is: " + multiplying2
                             + " * " + multiplier2 + " = " + product2);
                     break;
-                    
-                    case 3:
+
+                case 3:
                     int multiplying3;
                     final int multiplier3 = 3;
                     int product3;
                     System.out.println("enter multiplying -> ");
                     multiplying3 = input.nextInt();
                     product3 = multiplying3 * multiplier3;
-                    System.out.println("The multiplcation is: " + multiplying3 
+                    System.out.println("The multiplcation is: " + multiplying3
                             + " * " + multiplier3 + " = " + product3);
                     break;
-                    
-                    case 4:
+
+                case 4:
                     int multiplying4;
                     final int multiplier4 = 4;
                     int product4;
                     System.out.println("enter multiplying -> ");
                     multiplying4 = input.nextInt();
                     product4 = multiplying4 * multiplier4;
-                    System.out.println("The multiplcation is: " + multiplying4 
+                    System.out.println("The multiplcation is: " + multiplying4
                             + " * " + multiplier4 + " = " + product4);
                     break;
-                    
-                    case 5:
+
+                case 5:
                     int multiplying5;
                     final int multiplier5 = 5;
                     int product5;
                     System.out.println("enter multiplying -> ");
                     multiplying5 = input.nextInt();
                     product5 = multiplying5 * multiplier5;
-                    System.out.println("The multiplcation is: " + multiplying5 
+                    System.out.println("The multiplcation is: " + multiplying5
                             + " * " + multiplier5 + " = " + product5);
                     break;
-                    
-                    case 6:
+
+                case 6:
                     int multiplying6;
                     final int multiplier6 = 6;
                     int product6;
                     System.out.println("enter multiplying -> ");
                     multiplying6 = input.nextInt();
                     product6 = multiplying6 * multiplier6;
-                    System.out.println("The multiplcation is: " + multiplying6 
+                    System.out.println("The multiplcation is: " + multiplying6
                             + " * " + multiplier6 + " = " + product6);
                     break;
-                    
-                    case 7:
+
+                case 7:
                     int multiplying7;
                     final int multiplier7 = 7;
                     int product7;
                     System.out.println("enter multiplying -> ");
                     multiplying7 = input.nextInt();
                     product7 = multiplying7 * multiplier7;
-                    System.out.println("The multiplcation is: " + multiplying7 
+                    System.out.println("The multiplcation is: " + multiplying7
                             + " * " + multiplier7 + " = " + product7);
                     break;
-                    
-                    case 8:
+
+                case 8:
                     int multiplying8;
                     final int multiplier8 = 8;
                     int product8;
                     System.out.println("enter multiplying -> ");
                     multiplying8 = input.nextInt();
                     product8 = multiplying8 * multiplier8;
-                    System.out.println("The multiplcation is: " + multiplying8 
+                    System.out.println("The multiplcation is: " + multiplying8
                             + " * " + multiplier8 + " = " + product8);
                     break;
-                    
-                     case 9:
+
+                case 9:
                     int multiplying9;
                     final int multiplier9 = 9;
                     int product9;
                     System.out.println("enter multiplying -> ");
                     multiplying9 = input.nextInt();
                     product9 = multiplying9 * multiplier9;
-                    System.out.println("The multiplcation is: " + multiplying9 
+                    System.out.println("The multiplcation is: " + multiplying9
                             + " * " + multiplier9 + " = " + product9);
                     break;
-                    
-                     case 10:
+
+                case 10:
                     int multiplying10;
                     final int multiplier10 = 10;
                     int product10;
                     System.out.println("enter multiplying -> ");
                     multiplying10 = input.nextInt();
                     product10 = multiplying10 * multiplier10;
-                    System.out.println("The multiplcation is: " + multiplying10 
+                    System.out.println("The multiplcation is: " + multiplying10
                             + " * " + multiplier10 + " = " + product10);
                     break;
-                    
-                     case 11:
+
+                case 11:
                     int multiplying11;
                     final int multiplier11 = 11;
                     int product11;
                     System.out.println("enter multiplying -> ");
                     multiplying11 = input.nextInt();
                     product11 = multiplying11 * multiplier11;
-                    System.out.println("The multiplcation is: " + multiplying11 
+                    System.out.println("The multiplcation is: " + multiplying11
                             + " * " + multiplier11 + " = " + product11);
                     break;
-                    
-                     case 12:
+
+                case 12:
                     int multiplying12;
                     final int multiplier12 = 12;
                     int product12;
                     System.out.println("enter multiplying -> ");
                     multiplying12 = input.nextInt();
                     product12 = multiplying12 * multiplier12;
-                    System.out.println("The multiplcation is: " + multiplying12 
+                    System.out.println("The multiplcation is: " + multiplying12
                             + " * " + multiplier12 + " = " + product12);
                     break;
-                    
-                     case 13:
-                    System.out.println("Good Bye my friend");
+
+                case 13:
+                    System.out.println("Good Bye");
                     System.exit(0);
                     break;
-               
+
                 default:
                     System.out.println("Invalid option\n\n\n");
                     break;
             }
 
-        } while (option != 14);
+        } while (option != 13);
 
     }
 
