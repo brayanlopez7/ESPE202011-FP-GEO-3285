@@ -3,7 +3,6 @@ package ws10functions;
 public class WS10Functions {
 
     public static void main(String[] args) {
-        //call to divideTwoNumbers()  function
 
         int divd = 5;
         int divr = 10;
@@ -55,7 +54,7 @@ public class WS10Functions {
         y = x * x + 2 * x + 1;
 
         return y;
-    
+
     }
 
 }
