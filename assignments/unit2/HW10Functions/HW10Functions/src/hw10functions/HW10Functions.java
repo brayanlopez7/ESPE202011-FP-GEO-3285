@@ -6,11 +6,11 @@ public class HW10Functions {
 
     public static void main(String[] args) {
 
-        int divd = 0;
-        int divr = 0;
+        int dividend = 0;
+        int divisor = 0;
         float quotient = 0;
-        int work = 1;
-        int rest = 0;
+        int number1 = 1;
+        int number2 = 0;
         int multiplicand = 4;
         int multiplier = 1;
         int product = 0;
@@ -21,30 +21,33 @@ public class HW10Functions {
                 + "▀▀░▀▀ ▀▀▀ ▀▀▀ ░▀▀ ░▀▀░ ▀     ▀ ▀▀▀");
         System.out.println("===============================================\n");
 
-        quotient = divideTwoNumbers(divd, divr);
+        quotient = divideTwoNumbers(dividend, divisor);
 
         System.out.println("===============================");
         System.out.println(" THE DIVISIONS IS:" + quotient);
         System.out.println("===============================");
 
-        rest = f(3);
+        number2 = computeSquare(3);
         System.out.println("=====================================");
-        System.out.println(" THE SQUARE IS EQUAL TO: " + rest);
-        System.out.println("=====================================");
-
-        work = g(-1);
-        System.out.println("=====================================");
-        System.out.println(" THE SQUARE IS EQUAL TO: " + work);
+        System.out.println(" THE SQUARE IS EQUAL TO: " + number2);
         System.out.println("=====================================");
 
-        product = multiplicationTable(multiplicand, product);
+        number1 = computeParabola(-1);
+        System.out.println("=====================================");
+        System.out.println(" THE SQUARE IS EQUAL TO: " + number1);
+        System.out.println("=====================================");
+
+        product = showTheMultiplicationTable(multiplicand, product);
         System.out.println("=====================================");
         for (int mutiplier = 1; multiplier <= stop; multiplier++) {
             product = multiplicand * multiplier;
             System.out.println("7 *" + multiplicand + " = " + product);
         }
         System.out.println("=====================================");
-        
+
+        System.out.println("▄▀▀ ▄▀▀▄ ▄▀▀▄ █▀▄ . █▀▄ █░█ █▀▀\n"
+                + "█░█ █░░█ █░░█ █░█ . █▀▄ ▀█▀ █▀▀\n"
+                + "░▀▀ ░▀▀░ ░▀▀░ ▀▀░ . ▀▀░ ░▀░ ▀▀▀");
     }
 
     public static float divideTwoNumbers(int dividend, int divisor) {
@@ -68,37 +71,37 @@ public class HW10Functions {
 
     }
 
-    public static int f(int work) {
+    public static int computeSquare(int number1) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\n FOR f(x)");
         System.out.println("-------------------------------------");
         System.out.println("  PLEASE ENTER THE NUMBER: ");
-        work = scanner.nextInt();
+        number1 = scanner.nextInt();
 
-        int rest = 0;
+        int number2 = 0;
 
-        rest = work * work;
+        number2 = number1 * number1;
 
-        return rest;
+        return number2;
     }
 
-    public static int g(int work) {
+    public static int computeParabola(int number1) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\n FOR g(x)");
         System.out.println("-------------------------------------");
         System.out.println("  PLEASE ENTER THE NUMBER: ");
-        work = scanner.nextInt();
+        number1 = scanner.nextInt();
 
-        int rest = 0;
+        int number2 = 0;
 
-        rest = work * work + 2 * work + 1;
+        number2 = number1 * number1 + 2 * number2 + 1;
 
-        return rest;
+        return number2;
     }
 
-    public static int multiplicationTable(int multiplicand,
+    public static int showTheMultiplicationTable(int multiplicand,
             int product) {
         System.out.println("\n FOR THE MULTPiLICATION TABLE  4");
         System.out.println("-------------------------------------");
