@@ -63,7 +63,7 @@ public class WS13Task {
 
     private static void printTheMenu() {
         System.out.println(" ===================");
-        System.out.println("       Areas ");
+        System.out.println("      Areas ");
         System.out.println(" ===================");
         System.out.println("1. -> Circule Area");
         System.out.println("2. -> Diamond Area");
