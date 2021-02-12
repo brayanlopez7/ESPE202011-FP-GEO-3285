@@ -21,7 +21,6 @@ public class HW10Functions {
                 + "▀▀░▀▀ ▀▀▀ ▀▀▀ ░▀▀ ░▀▀░ ▀     ▀ ▀▀▀");
         System.out.println("===============================================\n");
 
-        quotient = divideTwoNumbers(dividend, divisor);
 
         System.out.println("===============================");
         System.out.println(" THE DIVISIONS IS:" + quotient);
