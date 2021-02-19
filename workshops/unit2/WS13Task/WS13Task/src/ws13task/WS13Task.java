@@ -15,41 +15,110 @@ public class WS13Task {
 
         Scanner input = new Scanner(System.in);
         boolean mainLoop = true;
+
+        double crclearea = 0;
+        float radio = 0.0F;
+        double diamdarea = 0;
+        float mayorbase = 0.0F;
+        float minorbase = 0.0F;
+        double trglarea = 0;
+        float base = 0.0F;
+        float height = 0.0F;
+        float speed = 0.0F;
+        float distance = 0.0F;
+        float time = 0.0F;
+        float force = 0.0F;
+        float mass = 0.0F;
+        float aceleration = 0.0F;
+        float period = 0.0F;
+        double length = 0;
+
         int option;
 
         do {
-            printTheMenu();
+            System.out.println(" ========================================");
+            System.out.println("      Areas And Physic Calucalations");
+            System.out.println(" ========================================");
+            System.out.println("1. -> Circule Area");
+            System.out.println("2. -> Diamond Area");
+            System.out.println("3. -> Triangle Area");
+            System.out.println("4. -> Speed Calculate");
+            System.out.println("5. -> Force Calculate");
+            System.out.println("6. -> Period Of A Simple Pendulus Calculate");
+            System.out.println("7. -> Exit");
+
+            System.out.println("Enter your option: ");
+
             option = input.nextInt();
 
             switch (option) {
 
                 case 1:
-                    calculateTheCircleArea(input);
+                    System.out.println("Pleae Enter The Radio ");
+                    radio = input.nextFloat();
+                    crclearea = calculateCircleArea(radio);
+                    System.out.println("The area of a circle is " + " π * r^2 "
+                            + " and is equal to: " + String.format("%.2f", crclearea));
                     break;
 
                 case 2:
-                    calculateTheDiamondArea(input);       
+                    System.out.println("Please Enter The Mayor Base ");
+                    mayorbase = input.nextFloat();
+                    System.out.println("Pleae Enter The Minor Base ");
+                    minorbase = input.nextFloat();
+                    diamdarea = calculateDiamondArea(mayorbase, minorbase);
+                    System.out.println(" the area of a diamond is "
+                            + mayorbase + " * " + minorbase + " and that is equal to: " + diamdarea);
                     break;
-                
+
                 case 3:
-                    calculateTheTriangleArea(input);             
-                    break; 
                     
-                case 4:
-                    calculateTheSpeed(input);         
-                    break; 
-                    
-                case 5:
-                    calculateTheForce(input);
+                    System.out.println("Please Enter The Base ");
+                    base = input.nextFloat();
+                    System.out.println("Pleae Enter The Height ");
+                    height = input.nextFloat();
+                    trglarea = calculateTriangleArea(base, height);
+                    System.out.println("The area of triangle is "
+                            + base + " * " + " height " + "/ 2 " + "and is equal to:" + trglarea);
                     break;
+
+                case 4:
                     
+                    System.out.println("Please ENter The Distance: ");
+                    distance = input.nextFloat();
+                    System.out.println("Please Enter The Time: ");
+                    time = input.nextFloat();
+                    
+                    speed = (distance / time);
+                    System.out.println(" The formula of speed is " + distance + " / "
+                            + time + " and that is equal to: " + speed);
+                    break;
+
+                case 5:
+                    force = 0;
+                    System.out.println("Please Enter The Mass: ");
+                    mass = input.nextFloat();
+                    System.out.println("Please Enter The Aceleration: ");
+                    aceleration = input.nextFloat();
+                    force = mass * aceleration;
+                    System.out.println(" The formula of Force is " + mass + " * "
+                            + aceleration + " and that is equal to: " + force);
+                    break;
+
                 case 6:
-                    calculateThePendulusPeriod(input);
-                    break;           
-                    
+                    period = 0.0f;
+                    System.out.println("Please enter the length: ");
+                    length = input.nextDouble();
+                    period = (float) (2 * Math.PI * Math.sqrt(length / 9.81));
+                    System.out.println("The formula of period is: " + " 2" + "π " + " * "
+                            + "√" + "(" + length + " /" + "9.81) " + " and that is equal to: "
+                            + String.format("%.2f", period));
+
+                    break;
+
                 case 7:
-                        
-                    doExitToTheMenu();
+                    System.out.println("Thank you. Come back soon" + " :)");
+                    System.exit(0);
                     break;
 
                 default:
@@ -57,92 +126,29 @@ public class WS13Task {
                     break;
             }
 
-        } while (option != 8);
+        } while (option != 7);
 
     }
 
-    private static void printTheMenu() {
-        System.out.println(" ===================");
-        System.out.println("      Areas ");
-        System.out.println(" ===================");
-        System.out.println("1. -> Circule Area");
-        System.out.println("2. -> Diamond Area");
-        System.out.println("3. -> Triangle Area");
-        System.out.println("4. -> Speed Formula and Calculate");
-        System.out.println("5. -> Force Formula and Calculate");
-        System.out.println("6. -> Period of a simple pendulus Formula and Calculate");
-        System.out.println("7. -> Exit");
-        
-        System.out.println("enter your option --> ");
-    }
-
-    private static void doExitToTheMenu() {
-        System.out.println("Thank you. Come back soon" + " :)");
-        System.exit(0);
-    }
-
-    private static void calculateThePendulusPeriod(Scanner input) {
-        float period;
-        System.out.println("Please enter the length: " );
-        double length = input.nextDouble();
-        period = (float) (2 * Math.PI * Math.sqrt(length / 9.81));
-        System.out.println("The formula of period is: " + " 2"+ "π " +" * "
-                + "√" +"("+length +" /" + "9.81) "+ " and that is equal to: "
-                + String.format("%.2f", period));
-    }
-
-    private static void calculateTheForce(Scanner input) {
-        float force;
-        System.out.println("Please Enter The Mass: " );
-        float mass = input.nextFloat();
-        System.out.println("Please Enter The Aceleration: " );
-        float aceleration = input.nextFloat();
-        force = mass * aceleration;
-        System.out.println(" The formula of Force is " + mass + " * " +
-                aceleration + " and that is equal to: " + force);
-    }
-
-    private static void calculateTheSpeed(Scanner input) {
-        float speed;
-        System.out.println("Please ENter The Distance: " );
-        float distance = input.nextFloat();
-        System.out.println("Please Enter The Time: " );
-        float time = input.nextFloat();
-        speed = (distance / time);
-        System.out.println(" The formula of speed is " + distance + " / " +
-                time + " and that is equal to: " + speed );
-    }
-
-    private static void calculateTheTriangleArea(Scanner input) {
+    private static double calculateTriangleArea(float base, float height) {
         double trglarea;
-        System.out.println("Please Enter The Base ");
-        float base = input.nextFloat();
-        System.out.println("Pleae Enter The Height ");
-        float height = input.nextFloat();
-        trglarea = (base * height)/2;
-        System.out.println("The area of triangle is " +
-                base + " * " + " height " + "/ 2 " + "and is equal to:" + trglarea);
+        trglarea = 0.0F;
+        trglarea = (base * height) / 2;
+        return trglarea;
     }
 
-    private static void calculateTheDiamondArea(Scanner input) {
+    private static double calculateDiamondArea(float mayorbase, float minorbase) {
         double diamdarea;
-        System.out.println("Please Enter The Mayor Base ");
-        float mayorbase = input.nextFloat();
-        System.out.println("Pleae Enter The Minor Base ");
-        float minorbase = input.nextFloat();
+        diamdarea = 0.0F;
         diamdarea = mayorbase * minorbase;
-        System.out.println(" the area of a diamond is "
-                + mayorbase + " * " + minorbase + " and that is equal to: " + diamdarea);
+        return diamdarea;
     }
 
-    private static void calculateTheCircleArea(Scanner input) {
+    private static double calculateCircleArea(float radio) {
         double crclearea;
-        System.out.println("Pleae Enter The Radio ");
-        float radio = input.nextFloat();
+        crclearea = 0;
         radio = (float) Math.pow(radio, 2);
         crclearea = Math.PI * radio;
-        System.out.println("The area of a circle is " + " π * r^2 "
-                + " and is equal to: " + String.format("%.2f", crclearea));
+        return crclearea;
     }
-
 }
