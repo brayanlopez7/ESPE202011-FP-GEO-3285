@@ -84,7 +84,7 @@ public class WS13Task {
 
                 case 4:
                     
-                    System.out.println("Please ENter The Distance: ");
+                    System.out.println("Please Enter The Distance: ");
                     distance = input.nextFloat();
                     System.out.println("Please Enter The Time: ");
                     time = input.nextFloat();

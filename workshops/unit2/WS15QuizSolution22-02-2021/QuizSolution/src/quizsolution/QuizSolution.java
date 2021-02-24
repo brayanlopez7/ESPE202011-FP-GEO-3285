@@ -29,7 +29,7 @@ public class QuizSolution {
         animals = new String[nameAnimals];
         weight = new float[nameAnimals];
 
-        for (int i = 0; i < nameAnimals; i++) {
+        for (int i = 1; i < nameAnimals; i++) {
             scanner.nextLine();
             System.out.print("Please enter the name of animals # " + i + " -> ");
             animals[i] = scanner.nextLine();
