@@ -18,6 +18,7 @@ public class FarmSimulator {
      */
     public static void main(String[] args) {
         
+        System.out.println("AUTOR: BRAYAN LÓPEZ");
         int[] milkByCowshed;
         String[] cows = {"Sol", "Sandy", "Alicia"};
         float[] litersByCowshed = { 9.3F, 8.2F, 5.9F, 12.4F, 10.3F, 11.5F};
