@@ -49,8 +49,8 @@ public class WS17MatrixTransposition {
             System.out.println("\t");
         }
         System.out.println(" A");
-
         prettyPrintMatrix(m, n, a);
+        
         System.out.println("");
 
         System.out.println(" B ");

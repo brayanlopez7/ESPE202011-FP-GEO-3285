@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws17matrixtransposition;
-
-import java.io.InputStream;
+package ws21functions;
 
 /**
  *
  * @author braya
  */
-class Scanner {
+class input {
 
-    Scanner(InputStream in) {
+    static int nextInt() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    static float nextFloat() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
