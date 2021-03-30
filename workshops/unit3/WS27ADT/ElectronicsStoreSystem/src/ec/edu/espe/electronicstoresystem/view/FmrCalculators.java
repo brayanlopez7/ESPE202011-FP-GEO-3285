@@ -177,14 +177,14 @@ public class FmrCalculators extends javax.swing.JFrame {
         Calculator calculator;
         String model;
         String color;
-        double serialNumber;
+        Float serialNumber;
         String operations;
         String size;
         CalculatorController calculatorController = new CalculatorController();
 
         model = cmbModel.getSelectedItem().toString();
         color = cmbColor.getSelectedItem().toString();
-        serialNumber = Double.parseDouble(txtSerialNumber.getText());
+        serialNumber = Float.parseFloat(txtSerialNumber.getText());
         operations = cmbOperations.getSelectedItem().toString();
         size = cmbSize.getSelectedItem().toString();
 
@@ -196,24 +196,7 @@ public class FmrCalculators extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnShowCalculatorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowCalculatorsActionPerformed
-        
-        String text="";
-    text =txtAreaCalculators.getText().toLowerCase();
-    int contador = txtAreaCalculators.getText().length();
-        int contar = 0;
- 
-    
-    for(int i=0; i<text.length();i++){
-    
-     char letra = text.charAt(i);
-     
-     if(letra==contar){
-     contador++;
-     }
-    }
-    txtAreaCalculators.setText(String.valueOf(contador));
-
-        
+   
         CalculatorController calculatorController = new CalculatorController();
         txtAreaCalculators.setText(calculatorController.read());
         

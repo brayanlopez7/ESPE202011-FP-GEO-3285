@@ -8,7 +8,7 @@ package utils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.BufferedReader;
-import java.io.Reader;
+import java.io.FileReader;
 import java.util.Scanner;
 import java.io.IOException;
 
@@ -60,13 +60,21 @@ public class FileManager {
 
     }
 
-    public static String read(String data, String fileModel){
-     
-return "2ss";
-    }
 
     public static String read(String calculators) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        calculators = null;
+        String text = null;
+        String document = "C:\\Users\\braya\\OneDrive\\Documentos\\ESPE\\II Semestre\\Fundamentos de Programación\\"
+                + "Code U1\\ESPE202011-FP-GEO-3285\\workshops\\unit3\\WS27ADT\\ElectronicsStoreSystem.cvs";
+        try (BufferedReader textBr = new BufferedReader(new FileReader(document))) {
+            while ((calculators = textBr.readLine()) != null) {
+                text = calculators;
+            }
+        } catch (IOException ex) {
+            System.out.println("Error");
+            ex.printStackTrace();
+        }
+
+        return text;
     }
 }
-	

@@ -13,11 +13,11 @@ public class Calculator {
 
     private String model;
     private String color;
-    private double serialNumber;
+    private float serialNumber;
     private String operations;
     private String Size;
 
-    public Calculator(String model, String color, double serialNumber, String operations, String Size) {
+    public Calculator(String model, String color, float serialNumber, String operations, String Size) {
         this.model = model;
         this.color = color;
         this.serialNumber = serialNumber;
@@ -63,7 +63,7 @@ public class Calculator {
     /**
      * @param serialNumber the numbers to set
      */
-    public void setNumbers(double serialNumber) {
+    public void setNumbers(float serialNumber) {
         this.serialNumber = serialNumber;
     }
 
