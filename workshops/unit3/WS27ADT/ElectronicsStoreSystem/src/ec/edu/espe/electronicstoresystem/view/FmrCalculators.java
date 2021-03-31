@@ -180,6 +180,7 @@ public class FmrCalculators extends javax.swing.JFrame {
         Float serialNumber;
         String operations;
         String size;
+        
         CalculatorController calculatorController = new CalculatorController();
 
         model = cmbModel.getSelectedItem().toString();
